@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.example.adri9ps.preferencias_datos.MainActivity">
+
+
+
+    <LinearLayout
+            android:layout_width="368dp"
+            android:layout_height="495dp"
+            android:orientation="vertical"
+            tools:layout_editor_absoluteY="8dp"
+            tools:layout_editor_absoluteX="8dp">
+
+        <EditText
+            android:id="@+id/id_nombre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Nombre:"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/id_dni"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="DNI:"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/id_fecha"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Fecha de nacimiento:"
+            android:inputType="textPersonName" />
+
+            <TextView
+                android:id="@+id/sexo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Sexo:"
+                android:textSize="18sp" />
+
+        <RadioGroup
+                android:layout_width="162dp"
+                android:layout_height="wrap_content" >
+
+                <RadioButton
+                    android:id="@+id/id_mujer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Mujer" />
+
+                <RadioButton
+                    android:id="@+id/id_hombre"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Hombre" />
+
+        </RadioGroup>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <Button
+                android:id="@+id/btn_enviar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ENVIAR"
+                android:layout_weight="0.51" />
+
+            <Button
+                android:id="@+id/btn_mostrar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="MOSTRAR"
+                android:layout_weight="0.43" />
+
+        </LinearLayout>
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="230dp"
+                android:orientation="vertical"
+            android:weightSum="1">
+
+                <TextView
+                    android:id="@+id/txt_info"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="INFORMACIÓN"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/holo_orange_dark" />
+
+                <TextView
+                    android:id="@+id/txt_nombre"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Nombre:"
+                    android:textSize="24sp" />
+
+                <TextView
+                    android:id="@+id/txt_dni"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="DNI:"
+                    android:textSize="24sp" />
+
+                <TextView
+                    android:id="@+id/txt_fecha"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Fecha de nacimiento:"
+                    android:textSize="24sp" />
+
+                <TextView
+                    android:id="@+id/txt_sexo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Sexo:"
+                    android:textSize="24sp" />
+
+                <Button
+                    android:id="@+id/btn_eliminar"
+                    android:layout_width="match_parent"
+                    android:layout_height="34dp"
+                    android:text="ELIMINAR"
+                    android:layout_weight="0.40" />
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.constraint.ConstraintLayout>
